@@ -1,0 +1,37 @@
+#small, #medium, #large {
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+
+    #small, #medium {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: green;
+    }
+
+    #small, #large {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        background-color: red;
+    }
+
+    #medium, #large {
+        display: none;
+    }
+
+    #small {
+        display: block;
+    }
+}
